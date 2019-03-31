@@ -42,7 +42,7 @@ if response.status_code == 200: # "status.code é uma resposta de uma lista"
     #df.index.name = "Item" 
     print("Gerando Arquivo CSV....")
 
-    df.to_csv("valores.csv", index=False, sep=";") #aqui ele desconsidera a colona de índice
+    df.to_csv("valores.csv", index=False, sep=";", decimal=",") #aqui ele desconsidera a colona de índice
 
     print("Arquivo CSV gerado com SUCESSO !!!")
 
