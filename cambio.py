@@ -11,7 +11,11 @@ response = requests.get(url)
 if response.status_code == 200: # "status.code é uma resposta de uma lista"
     print("Acesso Bem Sucedido !!!")
     print("Buscando informações das moedas ....")
+
     dados = response.json() #todo json é um dicionário
+    day = dados['date']
+    print("Acessando dados do dia %s / %s / %s" % (day[8:],day[5:7],day[0:4]))
+
     print("Valor do Euro.: %.2f" % dados['rates']['EUR'])
     print("Valor do Real.: %.2f" % dados['rates']['BRL'])
     print("Valor do Dolar.: %.2f" % dados['rates']['USD'])
