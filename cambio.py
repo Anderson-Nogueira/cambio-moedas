@@ -47,6 +47,20 @@ if response.status_code == 200: # "status.code é uma resposta de uma lista"
     print("Arquivo CSV gerado com SUCESSO !!!")
 
     
+    # --- As linhas de Código abaixo, seriam apenas para modo de estudo
+    # --- Referem-se a inserção de uma linha ao final do Arquivo
+
+    arquivo = open('valores.csv', 'r') # Abra o arquivo (leitura)
+    conteudo = arquivo.readlines()
+    conteudo.append('TESTE')   # insira seu conteúdo
+
+    arquivo = open('valores.csv', 'w') # Abre novamente o arquivo (escrita)
+    arquivo.writelines(conteudo)    # escreva o conteúdo criado anteriormente nele.
+
+    arquivo.close()
+
+    # --- FIM do Bloco de teste
+
 else:
     print("Error na conexão !!!")
 
