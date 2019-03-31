@@ -20,7 +20,7 @@ pip install pandas
 ```
 
 ### Arquivo Gerado
-![Aplicação](captura.png)
+![Aplicação](captura.PNG)
 
 
 ### Desenvolvedor
