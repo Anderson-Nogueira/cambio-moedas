@@ -8,10 +8,25 @@ Um script para pegar os valores, via requeisição web, das cotações das princ
 
 API utilizada: [FIXER.IO](https://fixer.io/)
 
+### Bibliotecas para Funcionamento do Script
+``` sh
+pip install requests
+```
+``` sh
+pip install json
+```
+``` sh
+pip install pandas
+```
+
+### Arquivo Gerado
+![Aplicação](captura.png)
+
+
 ### Desenvolvedor
 
  - Anderson Nogueira
 
 License
 ----
-*Free Software!*
+**Free Software!** A documentação está armazenada [aqui](https://github.com/Anderson-Nogueira/cambio-moedas)
